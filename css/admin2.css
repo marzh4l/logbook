@@ -1,0 +1,23 @@
+div.field label{
+  display: block;;
+  margin-bottom: 5px;
+  width: 90%;
+  float: left;
+  font-weight: bold;
+}
+div.field label div{
+  width: 45%;
+  float: left;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+div.field label input, div.field label select{
+  width: 55%;
+  margin-bottom: 10px;
+}
+div.field a i.glyphicon.glyphicon-question-sign {
+    padding-bottom: 17px;
+    font-size: 18pt;
+    margin-top:5px;
+}

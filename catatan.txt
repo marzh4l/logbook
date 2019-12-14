@@ -1,0 +1,23 @@
+//tambahan fungsi2.php
+$( "select" ).change(function() {
+  var tahun = "";
+  $( "select option:selected" ).each(function() {
+    if($( this ).attr('value') != "") tahun = "tahun="+$( this ).attr('value');
+  });
+  $('#link_cetak').attr('href', "cetak_pdf.php?lap=tahun&"+tahun);
+}).trigger( "change" );
+
+3 : http://192.168.10.3/magang/pertamina/cetak_pdf.php?lap=hari&tgl=07-08-2017
+14 : http://192.168.10.3/magang/pertamina/cetak_pdf.php?lap=hari&tgl=07-08-2017
+
+<li class="dropdown">
+  <a class="dropdown-toggle" type="button" data-toggle="dropdown" href="#">
+    <span class="glyphicon glyphicon-user" style="width: 13%"></span>
+    User
+    <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="tambah_user.php">Tambah User</a></li>
+        <li><a href="kelola_user.php">Kelola User</a></li>
+      </ul>
+</li>
+<li><a href="fungsi_admin.php"><span class="glyphicon glyphicon-list" style="width: 13%"></span>Fungsi</a></li>
